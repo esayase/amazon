@@ -1,0 +1,102 @@
+body {
+    height:500vh;
+    padding-top:3rem;
+}
+
+
+
+.container {
+    /* background:#333; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+}
+
+.item {
+    max-width:15rem;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink:1;
+    flex-flow: column wrap;
+    align-items: center;
+    padding:2rem;
+    border:1px solid #333;
+}
+
+.image {
+    height:10rem;
+    /* background:lightgray; */
+}
+
+.item img {
+    height:9rem;
+    width:9rem;
+}
+
+.name {
+    /* background:lightslategray; */
+    height:3rem;
+}
+
+.stat {
+    /* background:lightgray; */
+    height:6rem;
+}
+.stat img {
+    margin-top:1rem;
+    height:1.5rem;
+}
+
+.stat span {
+    padding-left: 3px;
+    font-size:1.2rem;
+    color:blue;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.dropdown {
+    position:relative;
+    width:3rem;
+    padding:4px;
+    border-radius: 7px;
+    background:rgb(244, 240, 240);
+    border:1px solid rgb(244, 240, 240);
+    box-shadow:2px 2px 2px rgb(231, 229, 229);
+    cursor: pointer;
+}
+
+.item-added {
+    position:absolute;
+    top:-1.7rem;
+    right:3rem;
+    border-radius:0.5rem;
+    background:green;
+    padding:2px 5px;
+    border:2px solid green;
+    opacity:0;
+}
+
+.add-to-cart {
+    /* background:lightslategray; */
+    height:5rem;
+}
+.add-to-cart button {
+    position:relative;
+    background:rgb(241, 201, 39);
+    font-size:1rem;
+    padding: 8px 50px;
+    border-radius: 40px;
+    border:none;
+    cursor:pointer;
+    margin-top: 3rem;
+    &:hover {
+        background-color:rgb(218, 180, 29);
+    }
+    &:active .item-added {
+        opacity:1;
+    }
+}
+

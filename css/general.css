@@ -1,0 +1,17 @@
+@media screen and (min-width: 480px) {
+    .amazon-logo-small {
+        display:none;
+    }
+    .amazon-logo {
+        display:visible;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .amazon-logo {
+        display:none;
+    }
+    .amazon-logo-small {
+        display:visible;
+    }
+}

@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    padding:5rem 0;
+    position:relative;
+    background:radial-gradient(white,gray);
+    display:flex;
+}
+
+header, footer, nav{
+    background:rgb(1, 45, 89);
+    display:flex;
+    flex:1;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+nav {
+    width:100%;
+    flex-flow: row nowrap;
+    background:lightsteelblue;
+    justify-content: space-between;
+}
+
+main {
+    flex-grow:1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    border:2px solid;
+    flex-grow:1;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items:  center;
+    border-radius:1rem;
+    margin:0.5rem;
+    background:rgb(170, 168, 164);
+}
+
+img {
+    width:10rem;
+    height:10rem;
+    
+    border:2px double gray;
+    border-radius: 50%;
+}
+
+figcaption {
+    text-align: center;
+    font-size:2rem;
+}
+footer {
+    position:fixed;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+@media screen and (min-width: 480px){
+    header {
+        
+    }
+}
